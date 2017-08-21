@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- REACT LIBRARY -->
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <!-- REACT DOM LIBRARY -->
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <!-- BABEL LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+  <title>FriendLy</title>
+ </head>
+ <body>
+
+ 	<div id="app">React has not rendered yet</div>
+
+ 	<script type="text/bable">
+
+ 		// FRIENDLY COMPLEX COMPONENT
+
+ 		function FriendLy() {
+ 			return(
+ 				<div>
+ 					<Avatar/>
+ 					<UserName/>
+ 					<GetConnected/>
+ 				</div>
+ 			);
+ 		}
+
+ 		// AVATAR COMPONENT
+
+ 		function Avatar() {
+ 			return(
+ 				<img src="https://static.primecp.com/master_images/Crochet/Panda2.jpg" alt="profile pic"/>
+ 			);
+ 		}
+
+ 		// USERNAME COMPONENT
+
+ 		function UserName() {
+ 			return(
+ 				<h1>Profile Name</h1>
+ 			);
+ 		}
+
+ 		// GET CONNECTED COMPLEX COMPONENT
+ 			function GetConnected() {
+ 				return(
+ 					<div>
+ 						<Like/>
+ 						<Share/>
+ 						<Add/>
+ 					</div>
+ 				);
+ 			}
+
+ 			// LIKE COMPONENT
+
+ 			function Like() {
+ 				return(
+ 					<div></div>
+ 				);
+ 			}
+
+ 			// SHARE COMPONENT
+
+ 			function Share() {
+ 				return(
+ 					<div></div>
+ 				);
+ 			}
+
+ 			// ADD COMPONENT
+
+ 			function Add() {
+ 				return(
+ 					<div></div>
+ 				);
+ 			}
+
+ 		ReactDOM.render(
+ 			<FriendLy/>,
+ 			document.getElementById("app")
+ 		);
+
+ 	</script>
+
+ </body>
+ </html>
